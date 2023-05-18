@@ -23,27 +23,7 @@ const { Canvas, Image, ImageData } = canvas;
 faceapi.env.monkeyPatch({ Canvas, Image, ImageData });
 
 
-// async function loadModels() {
-//   // Specify the model URLs
-//   const MODEL_URL = 'https://cdn.jsdelivr.net/npm/face-api.js@latest/weights';
 
-//   try {
-//     // Load face-api.js models
-//     await faceapi.nets.ssdMobilenetv1.loadFromUri(MODEL_URL);
-//     await faceapi.nets.faceLandmark68Net.loadFromUri(MODEL_URL);
-//     await faceapi.nets.faceRecognitionNet.loadFromUri(MODEL_URL);
-
-//     console.log('Face models loaded successfully.');
-
-//     // Proceed with face detection or other operations
-//     // ...
-//   } catch (error) {
-//     console.error('Error loading face models:', error);
-//   }
-// }
-
-// // Call the loadModels function before using face-api.js
-// loadModels();
 
 const app = express();
 
